@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    build: .
+    image:  laravel:7.4-cli
+    container_name: laravelHelloWorld
+    tty: true
