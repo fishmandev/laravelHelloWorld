@@ -4,6 +4,7 @@ services:
     build: .
     image:  laravel:7.4-cli
     container_name: laravelHelloWorld
+    command: sh -c "cd /home/ubuntu/laravelHelloWorld && php artisan serve --host=0.0.0.0"
     tty: true
     volumes:
       - "./../:/home/ubuntu/laravelHelloWorld"
