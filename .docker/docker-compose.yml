@@ -6,4 +6,6 @@ services:
     container_name: laravelHelloWorld
     tty: true
     volumes:
-    - "./../:/home/ubuntu/laravelHelloWorld"
+      - "./../:/home/ubuntu/laravelHelloWorld"
+    ports:
+      - 80:8000
