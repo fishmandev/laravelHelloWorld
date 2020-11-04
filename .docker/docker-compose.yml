@@ -5,3 +5,5 @@ services:
     image:  laravel:7.4-cli
     container_name: laravelHelloWorld
     tty: true
+    volumes:
+    - "./../:/home/ubuntu/laravelHelloWorld"
